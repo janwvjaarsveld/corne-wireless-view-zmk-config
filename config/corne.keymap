@@ -42,6 +42,7 @@
                   &kp LALT &kp LG(SPACE) &hm LGUI SPACE   &hm LSHFT RET &mo 2 &kp ESC
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -65,9 +66,9 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET         &kp AMPS    &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
-   &trans  &trans    &trans  &trans    &trans    &kp LT      &kp MINUS         &kp EQUAL   &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &trans  &trans    &trans  &trans    &trans    &kp GT      &kp UNDERSCORE    &kp PLUS    &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &trans  &kp EXCL  &kp AT     &kp HASH    &kp DLLR  &kp PRCNT   &kp CARET         &kp AMPS    &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
+   &trans  &trans    &trans     &trans      &trans    &kp LT      &kp MINUS         &kp EQUAL   &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &trans  &trans    &kp C_PREV &kp C_NEXT  &kp C_PP  &kp GT      &kp UNDERSCORE    &kp PLUS    &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                                    &trans &trans &trans   &trans &trans &trans
                         >;
                 };
