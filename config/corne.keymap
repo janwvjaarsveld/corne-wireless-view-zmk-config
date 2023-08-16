@@ -30,39 +30,39 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | ALT | GUI | SPC |   | SHFT| RET  | ESC |
                         label = "Base";
                         bindings = <
-   &kp TAB       &kp Q       &kp W          &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &lt 1 ESC     &lt 2 A     &lt 3 S        &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT     &hm LCTRL Z &kp X          &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &kp LALT &kp LG(SPACE) &hm LGUI SPACE   &hm LSHFT RET &mo 2 &kp ESC
+   &kp ESC     &kp Q         &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I       &kp O     &kp P      &kp BSPC
+   &lt 1 TAB   &kp A         &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K       &kp L     &kp SEMI   &kp SQT
+   &kp LSHFT   &hm LCTRL Z   &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH   &kp RSHFT
+                  &kp LALT &kp LG(SPACE) &hm LGUI SPACE         &hm LSHFT RET &mo 2 &kp ESC
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | BTCLR|     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Lower";
                         bindings = <
-   &trans     &kp N1          &kp N2          &kp N3          &kp N4          &kp N5            &kp N6     &kp N7          &kp N8           &kp N9          &kp N0          &kp BSPC
-   &trans     &trans          &trans          &none           &none           &none             &kp LEFT   &kp DOWN        &kp UP           &kp RIGHT       &trans          &trans
-   &trans     &none           &none           &none           &none           &none             &none      &none           &trans           &trans         &trans        &trans
-                                              &trans        &trans          &trans              &trans  &trans   &trans
+   &trans     &kp N1   &kp N2   &kp N3   &kp N4   &kp N5  &kp N6     &kp N7     &kp N8    &kp N9       &kp N0    &kp BSPC
+   &trans     &trans   &trans   &none    &none    &none   &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT    &trans    &trans
+   &trans     &none    &none    &none    &none    &none   &none      &none      &trans    &trans       &trans    &trans
+                              &trans    &trans   &trans    &trans     &trans     &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | CTRL |     |     |     |     |  <  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     | PRV |NEXT |PLAY |  >  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
